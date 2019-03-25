@@ -8,6 +8,7 @@ RUN apt-get install -y openssh-server sudo nano iputils-ping sshpass
 RUN apt-get update && \
     apt-get install -y software-properties-common && \
     apt-add-repository -y ppa:ansible/ansible-2.7 && \
+    apt-get update && \
     apt-get install -y ansible
 
 
